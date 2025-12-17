@@ -196,6 +196,84 @@
 				"shouldOnlyUseDefaults": false
 			}
 		},
+		"BOARD_NARELR": {
+			"values": {
+				"SENSORS": [
+					{
+						"protocol": "I2C",
+						"imu": "IMU_LSM6DSR",
+						"int": "D10",
+						"rotation": "DEG_0",
+						"scl": "D5",
+						"sda": "D4"
+					},
+					{
+						"protocol": "I2C",
+						"imu": "IMU_LSM6DSR",
+						"int": "D13",
+						"rotation": "DEG_180",
+						"scl": "D5",
+						"sda": "D4"
+					}
+				],
+				"BATTERY": {
+					"type": "BAT_EXTERNAL",
+					"r1": 100,
+					"r2": 330,
+					"shieldR": 0,
+					"pin": "A0"
+				},
+				"LED": {
+					"LED_PIN": "2",
+					"LED_INVERTED": true
+				}
+			},
+			"flashingRules": {
+				"applicationOffset": 0,
+				"needBootPress": false,
+				"needManualReboot": false,
+				"shouldOnlyUseDefaults": false
+			}
+		},
+		"BOARD_NAREB1": {
+			"values": {
+				"SENSORS": [
+					{
+						"protocol": "I2C",
+						"imu": "IMU_BMI160",
+						"int": "D10",
+						"rotation": "DEG_0",
+						"scl": "D5",
+						"sda": "D4"
+					},
+					{
+						"protocol": "I2C",
+						"imu": "IMU_BMI160",
+						"int": "D13",
+						"rotation": "DEG_0",
+						"scl": "D5",
+						"sda": "D4"
+					}
+				],
+				"BATTERY": {
+					"type": "BAT_EXTERNAL",
+					"r1": 100,
+					"r2": 330,
+					"shieldR": 0,
+					"pin": "A0"
+				},
+				"LED": {
+					"LED_PIN": "2",
+					"LED_INVERTED": true
+				}
+			},
+			"flashingRules": {
+				"applicationOffset": 0,
+				"needBootPress": false,
+				"needManualReboot": false,
+				"shouldOnlyUseDefaults": false
+			}
+		},
 		"BOARD_ESP01": {
 			"values": {
 				"SENSORS": [
